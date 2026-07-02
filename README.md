@@ -1,4 +1,4 @@
-# mpin-report — a LaTeX technical-report writing skill for Claude Code
+# claude-latex-paper-skill — a LaTeX technical-report writing skill for Claude Code
 
 A Claude Code skill for drafting and revising a Master-level technical report
 (*Ausarbeitung*) as a LaTeX document in English, with the discipline a graded
@@ -40,7 +40,7 @@ layout — or the Chinese equivalents (写论文, 技术报告, 排版).
 ## Structure
 
 ```
-mpin-report/
+claude-latex-paper-skill/
 ├── SKILL.md                # agent-facing instructions — the binding contract
 ├── README.md               # this file — human-facing overview
 ├── references/

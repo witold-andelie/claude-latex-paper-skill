@@ -1,5 +1,5 @@
 ---
-name: mpin-report
+name: claude-latex-paper-skill
 description: Write and revise the quant-alpha-foundation technical report as a LaTeX document in English — the Ausarbeitung for the Master-Projekt Informatik (MPIN, 12 ECTS) at Westfälische Hochschule, Gelsenkirchen. Use when the user asks to write the paper, technical report, thesis-style writeup, LaTeX report, 写论文, 技术报告, 排版, polish a section, add citations, or reduce AI-sounding prose in the report.
 ---
 
@@ -65,7 +65,7 @@ report in English.
 
 ### Per-section loop (draft and revision alike)
 1. Open only the evidence artifacts this section draws on; draft.
-2. Run `py -3.13 .claude/skills/mpin-report/scripts/verify_paper.py paper/`.
+2. Run `py -3.13 .claude/skills/claude-latex-paper-skill/scripts/verify_paper.py paper/`.
 3. Fix hard failures (CJK leakage, unresolved markers, cite/bib mismatch),
    rerun until clean — two passes is normal; fixes can introduce new errors.
 4. Compile, scan the log, eyeball changed pages.
