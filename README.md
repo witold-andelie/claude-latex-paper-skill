@@ -1,15 +1,14 @@
 # claude-latex-paper-skill — a LaTeX technical-report writing skill for Claude Code
 
-A Claude Code skill for drafting and revising a Master-level technical report
-(*Ausarbeitung*) as a LaTeX document in English, with the discipline a graded
+A Claude Code skill for drafting and revising a Master-level technical report or
+thesis as a LaTeX document in English, with the discipline a graded
 submission needs: every quantitative claim traced to a repository artifact, no
 citation written from memory, human-sounding prose, and a mechanical
 verification loop after every edit.
 
-It was built for the `quant-alpha-foundation` capstone — the Master-Projekt
-Informatik (MPIN, 12 ECTS) at the Westfälische Hochschule, Gelsenkirchen — but
-its writing and formatting apparatus is reusable for any single-author LaTeX
-paper.
+It grew out of a real Master-level report and has been generalised for
+any single-author LaTeX paper — a technical report, thesis, or conference-style
+writeup.
 
 > **Local LaTeX, by design.** This skill compiles the report on your own machine
 > with a local LaTeX toolchain (MiKTeX or TeX Live) — not Overleaf or any
@@ -70,9 +69,9 @@ document.
 The general machinery transfers unchanged: `style.md`, `latex.md` (including the
 single-column density and continuous-chapter techniques and the front-matter /
 title-page recipe), `citations.md`, `verification.md`, and `verify_paper.py`.
-Adapt the two project-specific pieces: `evidence-map.md` (it points at this
-repository's artifacts) and the fixed-metadata block in `SKILL.md` (author,
-institution, faculty, module).
+Adapt the two project-specific pieces: `evidence-map.md` (fill it with your
+project's artifacts) and the metadata block in `SKILL.md` (author, institution,
+faculty, module).
 
 ## Attribution
 

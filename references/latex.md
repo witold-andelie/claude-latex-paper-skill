@@ -1,4 +1,4 @@
-# LaTeX conventions and layout for the MPIN report
+# LaTeX conventions and layout for the report
 
 ## Project layout
 
@@ -22,11 +22,10 @@ paper/
   columns.
 - `biblatex` + `biber`; numeric (IEEE-like) style unless the user chooses
   author-year at scaffold time.
-- Title page carries the fixed metadata block from SKILL.md (Westfälische
-  Hochschule, Fachbereich Informatik und Kommunikation, **Master** Informatik,
-  Master-Projekt Informatik (MPIN), supervisor Prof. Laura Anderle). Include a
-  standard declaration-of-originality page (Eidesstattliche Erklärung) —
-  German UAS reports expect one; confirm exact wording with the user.
+- Title page carries the fixed metadata block from SKILL.md (institution,
+  faculty or department, degree/programme, module or venue, supervisor). If the
+  submission expects a declaration-of-originality page, include one and confirm
+  the exact wording with the user.
 - `booktabs` for tables, `siunitx` for numbers/units, `graphicx`, `hyperref`
   last (before `cleveref` if used).
 
@@ -43,8 +42,8 @@ clean. A reliable recipe, everything centred inside
 
 1. optionally a single institution line at the top — default the English name,
    no bilingual block and no separator rule (keep it minimal);
-2. the document kind in `\scshape` (`Master-Projekt Informatik (MPIN)`), then a
-   plain line `Ausarbeitung --- Technical Report --- 12\,ECTS`;
+2. the document kind in `\scshape` (the module, programme, or venue name), then
+   a plain descriptor line (e.g. `Technical Report` or `Master's Thesis`);
 3. the title framed by a pair of heavier rules (`\rule{\linewidth}{1.3pt}`
    above and below) set `\huge\bfseries`, subtitle in `\large` beneath;
 4. the author in `\Large\bfseries` with the degree under it;
@@ -52,11 +51,10 @@ clean. A reliable recipe, everything centred inside
    `\today`) at the foot.
 
 Keep every fixed-metadata value exactly as SKILL.md fixes it (author,
-institution, faculty, **Master** not Bachelor, MPIN 12 ECTS, supervisor).
+institution, faculty, degree/programme, module or venue, supervisor).
 
-**Declaration.** A short originality declaration (Eidesstattliche Erklärung), in
-the report's language; German UAS expect one — confirm exact wording with the
-user.
+**Declaration.** If the submission expects an originality declaration, add a
+short one in the report's language and confirm the exact wording with the user.
 
 **Abstract.** `\chapter*{Abstract}`, no citations, following the abstract job in
 style.md: problem → approach → the 2–3 headline numbers → the honest verdict.
@@ -64,15 +62,12 @@ style.md: problem → approach → the 2–3 headline numbers → the honest ver
 ## Report skeleton (adapt at outline stage, don't impose)
 
 1. Introduction — motivation, research questions, contributions
-2. Background & Related Work — cross-sectional alphas, GNN/GAT, electricity
-   price forecasting
-3. Platform Architecture — ingestion → warehouse → dbt marts → dashboard
-4. Equity Track: GAT Relational Factors — design, gates, A/B, results
-5. Energy Track: Forecasting — baselines → GAT, E12 leakage post-mortem,
-   E13/E13b honest verdict
-6. Discussion — what held, what failed, threats to validity
-7. Conclusion & Future Work
-8. Appendices — reproducibility (commands, versions), extended tables
+2. Background & Related Work — the literatures the work builds on
+3. Methods / System / Architecture — the reproducible description
+4. Experiments / Results — organised by the question answered, not chronology
+5. Discussion — what held, what failed, threats to validity
+6. Conclusion & Future Work
+7. Appendices — reproducibility (commands, versions), extended tables
 
 ## Numbers pipeline
 

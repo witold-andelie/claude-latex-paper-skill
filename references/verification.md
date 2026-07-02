@@ -35,18 +35,18 @@ Never mark a section done on the first pass without a clean re-scan.
 
 ## Numbers audit (manual, per results section)
 
-For every quantitative sentence, grep the number in `docs/results/*.csv` or
-the generating table file. A number you "remember" from the conversation is
-not evidence — this session alone produced a verification-run Sharpe (0.35)
-that must never be confused with archived research numbers. When a number is
-derived (difference, ratio), leave a `% derived: <how>` comment next to it.
+For every quantitative sentence, grep the number in the project's results files
+or the table that generates it. A number you "remember" from the conversation
+is not evidence — a value you computed live in a session must never be confused
+with an archived result number. When a number is derived (difference, ratio),
+leave a `% derived: <how>` comment next to it.
 
 ## Glossary consistency (from the translation glossary discipline)
 
 Maintain `paper/glossary.md`: term → the one English rendering used in the
-report (e.g. decide once between "interconnector" / "cross-border line";
-"composite alpha" never drifts to "combined factor"). Seed it from
-`CONTEXT.md`'s ubiquitous language at scaffold time; update before starting
+report (decide once between competing terms — a term and its near-synonym —
+and never let it drift). Seed it from the project's own glossary or domain
+notes at scaffold time; update before starting
 each new section; scan drafts against it when revising. One term, one
 rendering, all 40+ pages.
 

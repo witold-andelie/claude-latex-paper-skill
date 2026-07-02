@@ -29,9 +29,9 @@ precise technical meaning):
 | burgeoning / multifaceted / nuanced | growing / complex / subtle |
 | unprecedented | new, notable |
 
-Keep domain terms exact and untouched: alpha, IC, Sharpe, walk-forward,
-GATv2, cross-sectional, residual load, day-ahead spot, leakage, OOS. Never
-"synonymize" a technical term, identifier, path, or math expression.
+Keep domain terms exact and untouched — the field's terms of art, model and
+metric names, identifiers, and units, whatever they are. Never "synonymize" a
+technical term, identifier, path, or math expression.
 
 ## Rewrite safety zones
 
@@ -83,9 +83,8 @@ change (claim, evidence, boundary) — handle it as one, not as polish.
 
 - **Abstract**: problem → approach → the 2–3 headline numbers → the honest
   verdict. No citations, no suspense.
-- **Introduction**: why relational structure for alpha research, why the two
-  tracks, contributions as claims the body will defend — each mapped to a
-  section.
+- **Introduction**: the motivation and the gap, the research questions, and the
+  contributions as claims the body will defend — each mapped to a section.
 - **Methods/Architecture**: reproducible description; a reader with the repo
   should find every named component.
 - **Experiments/Results**: chronology is not structure — organize by

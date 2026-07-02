@@ -1,4 +1,4 @@
-"""Mechanical checks for the MPIN report. Exit 1 on hard failures.
+"""Mechanical checks for a LaTeX report. Exit 1 on hard failures.
 
 Usage: py -3.13 verify_paper.py [paper_dir]   (default: paper/)
 """
